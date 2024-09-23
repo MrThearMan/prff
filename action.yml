@@ -1,5 +1,6 @@
-name: Fast-forward
+name: Fast-forward merge pull requests
 description: Fast-forward merge a pull request.
+author: MrThearMan
 
 inputs:
   github_token:
@@ -23,3 +24,7 @@ runs:
         PYTHONENCODING: "utf-8"
       run: python ${{ github.action_path }}/main.py
       shell: bash
+
+branding:
+  icon: fast-forward
+  color: orange
