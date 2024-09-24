@@ -22,10 +22,5 @@ jobs:
         with:
           python-version: '3.12'
 
-      - run: |
-          echo ${{ github.event_name }}
-          echo ${{ github.ref_name }}
-          echo ${{ github.sha }}
-
       - run: pip install pytest
       - run: pytest -s -vv --log-cli-level=DEBUG --disable-warnings .
